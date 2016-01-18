@@ -42,8 +42,9 @@
             <plugin>
                 <groupId>au.com.dius</groupId>
                 <artifactId>pact-jvm-provider-maven_2.11</artifactId>
-                <version>2.1.9</version>
+                <version>3.2.2</version>
                 <configuration>
+                    <pactBrokerUrl></pactBrokerUrl>
                     <serviceProviders>
                         <serviceProvider>
                             <name>Foo_Provider</name>
@@ -51,12 +52,7 @@
                             <host>localhost</host>
                             <port>8080</port>
                             <path>/</path>
-                            <consumers>
-                                <consumer>
-                                    <name>Foo_Consumer</name>
-                                    <pactFile>target/pacts/Foo_Consumer-Foo_Provider.json</pactFile>
-                                </consumer>
-                            </consumers>
+                            <pactFileDirectory>target/pacts</pactFileDirectory>
                         </serviceProvider>
                     </serviceProviders>
                 </configuration>
