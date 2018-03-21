@@ -5,6 +5,7 @@
     <groupId>io.pivotal</groupId>
     <artifactId>microservices-pact-maven</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <jacoco.version>0.7.2.201409121644</jacoco.version>
 
     <packaging>pom</packaging>
 
